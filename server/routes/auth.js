@@ -97,3 +97,6 @@ router.post('/login', async (req, res) => {
 });
 
 module.exports = router;
+
+
+    // "@google/generative-ai": "^0.24.1",

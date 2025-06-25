@@ -6,8 +6,8 @@ const authRoutes = require('./routes/auth');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 
 // MongoDB connection
 mongoose.connect('mongodb://127.0.0.1:27017/codeforgood', {
@@ -26,3 +26,8 @@ app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
 
+
+
+
+// const aiRoutes = require('./routes/ai');
+// app.use('/api/ai', aiRoutes);
