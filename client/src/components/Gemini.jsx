@@ -3,7 +3,7 @@ import { GoogleGenerativeAI, HarmBlockThreshold, HarmCategory } from "@google/ge
 import { Send, Paperclip, X } from "lucide-react"
 import Markdown from "react-markdown"
 
-const API_KEY = "AIzaSyAh59f8TVDVrvW0760lOPBuM9dlrq6h5Ak"  // Replace with your working key
+const API_KEY = "AIzaSyAh59f8TVDVrvW0760l"  // Replace with your working key
 const genAI = new GoogleGenerativeAI(API_KEY)
 const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" })
 

@@ -23,7 +23,7 @@ function Payment() {
     const { data } = await axios.post('http://localhost:5000/api/payment/create-order', { amount });
 
     const options = {
-      key: 'rzp_test_a3U6moP1LVql3W', // Replace with your Razorpay Key ID
+      key: 'rzp_test_moP1LVql3W', // Replace with your Razorpay Key ID
       amount: data.order.amount,
       currency: 'INR',
       name: 'CodeForGood',
