@@ -2,7 +2,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const authRoutes = require('./routes/auth');
 require('dotenv').config();
 
 const app = express();
@@ -17,6 +16,9 @@ mongoose.connect('mongodb://127.0.0.1:27017/codeforgood', {
 .then(() => console.log('✅ MongoDB connected'))
 .catch((err) => console.error('❌ MongoDB connection error:', err));
 
+
+
+const authRoutes = require('./routes/auth');
 app.use('/api', authRoutes);
 const paymentRoutes = require('./routes/payment');
 app.use('/api/payment', paymentRoutes);

@@ -1,0 +1,16 @@
+.razorpay-home {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2a2a72, #009ffd);
+}
+
+.features h5 {
+  color: #0056b3;
+}
+
+.cta {
+  background: #007bff;
+  color: white;
+}
